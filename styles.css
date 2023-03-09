@@ -4,34 +4,210 @@
   }
   
   body {
-    font-family: Raleway, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
   
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10vh;
+      background-color: #eee;
+      z-index: 1;
+    }
   
   #header-img {
-    width: 450
+    width: 300px;
   }
   
   ul {
+    width: 350px;
+    height: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
   
   a{
     text-decoration: none;
     color: black;
   }
+
+  #nav-bar ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
   
   li {
     list-style-type: none;
   }
-  
+
   main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 45px;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #email {
+    margin-bottom: 5px;
+    width: 50%;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+
+  #submit {
+    width: 30%;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial;
+    background-color: gold;
+    border: none;
+    border-radius: 3px;
+  }
+
+  img {
+    margin-top: 20px;
+  }
+
+ h3, p {
+    padding: 0px;
+    margin: 0%;
+  }
+
+  #how-it-works {
+    padding: 50px;
+  }
+
+  #pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 270px;
+    background-color: rd;
+  }
+  
+  .product {
+    font-family: 'Raleway';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 320px;
+    height: 270px;
+  }
+
+  .level {
+    background-color: #ccc;
+    width: 100%;
+    height: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ol li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 60%;
+    height: 27px;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Raleway';
+    background-color: gold;
+    border: none;
+    border-radius: 3px;
+    margin: 2px;
+  }
+
+  footer {
+    font-family: 'Raleway';
+    width: 100%;
+    height: 70px;
+    background-color: #ccc;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+
+  #foot-div {
+    display: flex;
+    flex-direction: column;
+    font-weight: 280;
+  }
+
+footer ul {
+  margin: 0;
+  font-weight: bold;
+}
+
+  footer p {
+    align-self: flex-end;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* CSS styles for screens with a maximum width of 768px */
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 100;
+    }
+    
+    #nav-bar {
+      display: none;
+    }
+    
+    #nav-bar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    #nav-bar li {
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    
+    #nav-bar a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
   }
